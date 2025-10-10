@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG" />
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        ViGLUE: A Vietnamese General Language Understanding Benchmark and
+        Analysis of Vietnamese Language Models
+    </title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+    <!-- Heading and Buttons -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <!-- <h1 class="title is-1 publication-title">
+                            ViGLUE: A Vietnamese General Language
+                            Understanding Benchmark and Analysis of
+                            Vietnamese Language Models
+                        </h1> -->
+                        <h1 class="title is-1 publication-title my-0">
+                            ViGLUE
+                        </h1>
+                        <br>
+                        <h2 class="title is-2 publication-title">
+                            A Vietnamese General Language <br>
+                            Understanding Benchmark <br>
+                            and Analysis of Vietnamese Language Models
+                        </h2>
+
+                        <div class="is-size-3 publication-authors my-2" style="color: #ff3860;">
+                            <span> NAACL 2024 </span>
+                        </div>
+
+                        <!-- <h2 class="is-size-4 publication-awards" style="width: 100%">
+                            NAACL 2024
+                        </h2> -->
+
+                        <!-- Authors -->
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://trminhnam.github.io/" target="_blank">Minh-Nam
+                                    Tran</a><sup>*</sup>,</span>
+                            <span class="author-block">
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Phu-Vinh
+                                    Nguyen</a><sup>*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=jECXavQAAAAJ&hl=en"
+                                    target="_blank">Long
+                                    Nguyen </a><sup>†</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=WDsuRbwAAAAJ&hl=en"
+                                    target="_blank">Dien
+                                    Dinh
+                                </a>
+                            </span>
+                        </div>
+
+                        <!-- Affiliations -->
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                Faculty of Information Technology,
+                                University of Science, Ho Chi Minh City,
+                                Vietnam
+                                <!-- <br />
+                                    Vietnam National University, Ho Chi Minh
+                                    City, Vietnam -->
+                                <!-- <br />
+                                    NAACL 2024 -->
+                            </span>
+                            <span class="eql-cntrb"><small>
+                                    <br />
+                                    <sup>*</sup>
+                                    Equal Contribution,
+                                    <sup>†</sup>Corresponding Author
+                                </small>
+                            </span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Paper PDF link -->
+                                <span class="link-block">
+                                    <a href="https://aclanthology.org/2024.findings-naacl.261.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Supplementary PDF link -->
+                                <!-- <span class="link-block">
+                                        <a
+                                            href="static/pdfs/supplementary_material.pdf"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Supplementary</span>
+                                        </a>
+                                    </span> -->
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/trminhnam/ViGLUE" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- Dataset link -->
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/tmnam20/ViGLUE" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <!-- https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg -->
+                                            <!-- <img
+                                                    src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg"
+                                                    alt="Hugging Face Logo"
+                                                    width="20"
+                                                    height="20"
+                                                /> -->
+                                            <!-- <span class="icon">
+                                                    <svg
+                                                        class="svg-inline--fa fa-database fa-w-14"
+                                                        aria-hidden="true"
+                                                        focusable="false"
+                                                        data-prefix="fas"
+                                                        data-icon="database"
+                                                        role="img"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 448 512"
+                                                        data-fa-i2svg=""
+                                                    >
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                                                        ></path></svg
+                                                    >
+                                                </span> -->
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+                                <!-- Video/Presentation Link -->
+                                <!-- <span class="link-block">
+                                    <a href="https://aclanthology.org/2024.findings-naacl.261.mp4" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser/Summary -->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h4 class="subtitle has-text-justified">
+                    <span style="color: #ff3860"><b>TL;DR:</b></span> <b>V</b>iGLUE is a <b>Vi</b>etnamese
+                    <b>G</b>eneral <b>L</b>anguage <b>U</b>nderstanding Evaluation benchmark, including 12 tasks on
+                    various domains, and the baseline models finetuned from different language models.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3 has-text-centered">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            As the number of language models has increased,
+                            various benchmarks have been suggested to assess
+                            the proficiency of the models in natural
+                            language understanding. However, there is a lack
+                            of such a benchmark in Vietnamese due to the
+                            difficulty in accessing natural language
+                            processing datasets or the scarcity of
+                            task-specific datasets. <b>ViGLUE</b>, the
+                            proposed dataset collection, is a
+                            <b>Vi</b>etnamese <b>G</b>eneral <b>L</b>anguage
+                            <b>U</b>nderstanding <b>E</b>valuation benchmark
+                            developed using three methods: translating an
+                            existing benchmark, generating new corpora, and
+                            collecting available datasets. ViGLUE contains
+                            twelve tasks and encompasses over ten areas and
+                            subjects, enabling it to evaluate models
+                            comprehensively over a broad spectrum of
+                            aspects. Baseline models utilizing multilingual
+                            language models are also provided for all tasks
+                            in the proposed benchmarks. In addition, the
+                            study of the available Vietnamese large language
+                            models is conducted to explore the language
+                            models’ ability in the few-shot learning
+                            framework, leading to the exploration of the
+                            relationship between specific tasks and the
+                            number of shots.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Dataset Overview -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3 is-centered has-text-centered">Dataset Overview</h2>
+                        <div class="desc has-text-justified has-text-centered">
+                            Task statistics of ViGLUE. NLI stands for natural language inference. Acc is for accuracy,
+                            and MCC stands
+                            for Matthews correlation coefficient. Column “Method” points out the method to obtain the
+                            corresponding corpus.
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-10">
+                        <table class="table is-hoverable is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>Corpus</th>
+                                    <th class="has-text-right">|Train|</th>
+                                    <th class="has-text-right">|Val.|</th>
+                                    <th class="has-text-right">|Test|</th>
+                                    <th>Method</th>
+                                    <th>Metric</th>
+                                    <th>Domain</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="7" class="has-text-centered">
+                                        <strong>Natural Language Inference Tasks</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MNLI</td>
+                                    <td class="has-text-right">392,702</td>
+                                    <td class="has-text-right">9,815</td>
+                                    <td class="has-text-right">9,796</td>
+                                    <td>Translating</td>
+                                    <td>Acc.</td>
+                                    <td>Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td>QNLI</td>
+                                    <td class="has-text-right">104,743</td>
+                                    <td class="has-text-right">5,463</td>
+                                    <td class="has-text-right">5,463</td>
+                                    <td>Translating</td>
+                                    <td>Acc.</td>
+                                    <td>Wikipedia</td>
+                                </tr>
+                                <tr>
+                                    <td>RTE</td>
+                                    <td class="has-text-right">2,490</td>
+                                    <td class="has-text-right">277</td>
+                                    <td class="has-text-right">3,000</td>
+                                    <td>Translating</td>
+                                    <td>Acc.</td>
+                                    <td>Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td>VNRTE</td>
+                                    <td class="has-text-right">12,526</td>
+                                    <td class="has-text-right">3,137</td>
+                                    <td class="has-text-right">N/A</td>
+                                    <td>Constructing</td>
+                                    <td>Acc.</td>
+                                    <td>News</td>
+                                </tr>
+                                <tr>
+                                    <td>WNLI</td>
+                                    <td class="has-text-right">635</td>
+                                    <td class="has-text-right">71</td>
+                                    <td class="has-text-right">146</td>
+                                    <td>Translating</td>
+                                    <td>Acc.</td>
+                                    <td>Fiction books</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="has-text-centered">
+                                        <strong>Sentiment Analysis Tasks</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SST2</td>
+                                    <td class="has-text-right">67,349</td>
+                                    <td class="has-text-right">872</td>
+                                    <td class="has-text-right">1,821</td>
+                                    <td>Translating</td>
+                                    <td>Acc.</td>
+                                    <td>Movie reviews</td>
+                                </tr>
+                                <tr>
+                                    <td>VSFC</td>
+                                    <td class="has-text-right">11,426</td>
+                                    <td class="has-text-right">1,538</td>
+                                    <td class="has-text-right">3,166</td>
+                                    <td>Collecting</td>
+                                    <td>Acc.</td>
+                                    <td>Student feedback</td>
+                                </tr>
+                                <tr>
+                                    <td>VSMEC</td>
+                                    <td class="has-text-right">5,548</td>
+                                    <td class="has-text-right">686</td>
+                                    <td class="has-text-right">693</td>
+                                    <td>Collecting</td>
+                                    <td>Acc.</td>
+                                    <td>Social media</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="has-text-centered">
+                                        <strong>Similarity and Paraphrase Tasks</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MRPC</td>
+                                    <td class="has-text-right">3,668</td>
+                                    <td class="has-text-right">408</td>
+                                    <td class="has-text-right">1,725</td>
+                                    <td>Translating</td>
+                                    <td>Acc./F1</td>
+                                    <td>News</td>
+                                </tr>
+                                <tr>
+                                    <td>QQP</td>
+                                    <td class="has-text-right">363,846</td>
+                                    <td class="has-text-right">40,430</td>
+                                    <td class="has-text-right">390,965</td>
+                                    <td>Translating</td>
+                                    <td>Acc./F1</td>
+                                    <td>Quora QA</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="has-text-centered">
+                                        <strong>Single-Sentence Tasks</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CoLA</td>
+                                    <td class="has-text-right">8,551</td>
+                                    <td class="has-text-right">1,043</td>
+                                    <td class="has-text-right">1,063</td>
+                                    <td>Translating</td>
+                                    <td>MCC</td>
+                                    <td>Miscellaneous</td>
+                                </tr>
+                                <tr>
+                                    <td>VToC</td>
+                                    <td class="has-text-right">7,293</td>
+                                    <td class="has-text-right">1,831</td>
+                                    <td class="has-text-right">N/A</td>
+                                    <td>Constructing</td>
+                                    <td>Acc.</td>
+                                    <td>News</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Dataset Preview -->
+
+    <!-- Dataset preview -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-12">
+                        <h2 class="title is-3 is-centered has-text-centered">Dataset Preview</h2>
+                        <!-- <h3 class="subtitle is-5 has-text-centered pt-4">
+                            A preview of the ViGLUE dataset on the Hugging Face
+                            dataset viewer.
+                        </h3> -->
+                        <div class="desc is-centered has-text-centered pb-4">
+                            This is the dataset viewer provided by Hugging Face for easy inspection of the ViGLUE
+                            dataset.
+                        </div>
+                        <div style="
+                            border-radius: 2rem;
+                            width: 100%;
+                            overflow: hidden;
+                        ">
+                            <!-- https://stackoverflow.com/questions/5738985/is-it-possible-to-have-css-rounded-corners-on-an-iframe -->
+                            <iframe src="https://huggingface.co/datasets/tmnam20/ViGLUE/embed/viewer/cola/train"
+                                width="100%" frameborder="0" height="480px"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Dataset Preview -->
+
+    <!-- Model Analysis -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns">
+                    <div class="column is-12">
+                        <h2 class="title is-centered has-text-centered">Model Analysis</h2>
+                        <!-- <h3 class="subtitle is-5 has-text-centered pt-4">
+                            A preview of the ViGLUE dataset on the Hugging Face
+                            dataset viewer.
+                        </h3> -->
+                        <div class="desc is-centered has-text-centered pb-4">
+                            Few-shot learning performance of BLOOM model family with <em>k = 0, 1, 2, 4</em>, denoted by
+                            the star, the plus, the circle, and the diamond markers,
+                            respectively.
+                        </div>
+                        <img src="static/images/bloom.all_shots.v2.svg" alt="BLOOM Model Analysis" />
+                        <div class="content has-text-justified">
+                            <ul>
+                                <li>
+                                    Increasing the number of examples (<em>k</em>) benefits models on QNLI across
+                                    all sizes.
+                                </li>
+                                <li>
+                                    CoLA, MNLI, MRPC, and QQP don’t benefit from few-shot learning; <em>k</em>=0
+                                    performs best.
+                                </li>
+                                <li>
+                                    BLOOM-176B outperforms smaller models in QNLI, RTE, and SST2 but performs
+                                    similarly to smaller models on other tasks.
+                                </li>
+                                <li>
+                                    When the model size increases, the performance of NLI and sentiment tasks
+                                    improves.
+                                </li>
+                                <li>
+                                    Increasing the model size does not always improve the performance on inference
+                                    tasks (MNLI, QNLI and WMNLI).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5" />
+
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-12">
+                        <div class="desc is-centered has-text-centered">
+                            Comparing BLOOM-7B1 and PhoGPT on 12 ViGLUE tasks with different <em>k</em>-shot settings.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-9">
+                        <img src="static/images/bloom7b1_vs_phogpt7b5_updated.svg" alt="Model Comparison" />
+                    </div>
+                </div>
+
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-12">
+                        <div class="content has-text-justified">
+                            <ul>
+                                <li>
+                                    PhoGPT outperforms BLOOM-7B1 on 6/12 tasks, especially in zero-shot learning.
+                                </li>
+                                <li>
+                                    BLOOM-7B1 performs better than PhoGPT when examples (<em>k</em>=1, 2, 4) are
+                                    provided.
+                                </li>
+                                <li>
+                                    Zero-shot learning performs best in CoLA, MNLI, MRPC, QQP, and WNLI. Increasing
+                                    examples in prompts generally decreases performance in those tasks.
+                                </li>
+                                <li>
+                                    For QNLI and VNRTE, increasing examples improves performance.
+                                </li>
+                                <li>
+                                    Performance for QQP, SST2, VSFC, and VSMEC fluctuates when <em>k</em> changes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5" />
+
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-12">
+                        <div class="desc is-centered has-text-centered">
+                            <em>Further results and analysis of multilingual and Vietnamese BERT-based language models can be found in the paper.</em>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Dataset Preview -->
+
+    <!-- Paper poster -->
+    <!-- <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Poster</h2>
+                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+                </iframe>
+            </div>
+        </div>
+    </section> -->
+    <!--End paper poster -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@inproceedings{tran-etal-2024-viglue,
+  title     = {{V}i{GLUE}: A {V}ietnamese General Language Understanding Benchmark and Analysis of {V}ietnamese Language Models},
+  author    = {Tran, Minh-Nam and Nguyen, Phu-Vinh and Nguyen, Long and Dien, Dinh},
+  editor    = {Duh, Kevin and Gomez, Helena and Bethard, Steven},
+  booktitle = {Findings of the Association for Computational Linguistics: NAACL 2024},
+  month     = jun,
+  year      = {2024},
+  address   = {Mexico City, Mexico},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2024.findings-naacl.261/},
+  doi       = {10.18653/v1/2024.findings-naacl.261},
+  pages     = {4174--4189}
+}</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the
+                            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a>
+                            which was adopted from the <a href="https://nerfies.github.io"
+                                target="_blank">Nerfies</a> project page. You are free to borrow the
+                            source code of this website. <br />
+                            This website is licensed under a
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                target="_blank">Creative Commons Attribution-ShareAlike 4.0
+                                International License</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+</body>
+
+</html>
